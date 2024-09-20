@@ -3094,8 +3094,8 @@ MDIO_u8SetPinValue(MDIO_PORTD,MDIO_PIN_5,MDIO_HIGH);
     14d2:	0e 94 14 08 	call	0x1028	; 0x1028 <MDIO_u8SetPinValue>
     14d6:	80 e0       	ldi	r24, 0x00	; 0
     14d8:	90 e0       	ldi	r25, 0x00	; 0
-    14da:	a8 e4       	ldi	r26, 0x48	; 72
-    14dc:	b3 e4       	ldi	r27, 0x43	; 67
+    14da:	aa ef       	ldi	r26, 0xFA	; 250
+    14dc:	b4 e4       	ldi	r27, 0x44	; 68
     14de:	89 8f       	std	Y+25, r24	; 0x19
     14e0:	9a 8f       	std	Y+26, r25	; 0x1a
     14e2:	ab 8f       	std	Y+27, r26	; 0x1b
@@ -3235,7 +3235,7 @@ _delay_loop_2(uint16_t __count)
     15b4:	f1 f7       	brne	.-4      	; 0x15b2 <main+0xfe>
     15b6:	98 8b       	std	Y+16, r25	; 0x10
     15b8:	8f 87       	std	Y+15, r24	; 0x0f
-_delay_ms(200);
+_delay_ms(2000);
 MDIO_u8SetPinValue(MDIO_PORTD,MDIO_PIN_5,MDIO_LOW);
     15ba:	83 e0       	ldi	r24, 0x03	; 3
     15bc:	65 e0       	ldi	r22, 0x05	; 5
@@ -3243,8 +3243,8 @@ MDIO_u8SetPinValue(MDIO_PORTD,MDIO_PIN_5,MDIO_LOW);
     15c0:	0e 94 14 08 	call	0x1028	; 0x1028 <MDIO_u8SetPinValue>
     15c4:	80 e0       	ldi	r24, 0x00	; 0
     15c6:	90 e0       	ldi	r25, 0x00	; 0
-    15c8:	a8 e4       	ldi	r26, 0x48	; 72
-    15ca:	b3 e4       	ldi	r27, 0x43	; 67
+    15c8:	aa ef       	ldi	r26, 0xFA	; 250
+    15ca:	b4 e4       	ldi	r27, 0x44	; 68
     15cc:	8b 87       	std	Y+11, r24	; 0x0b
     15ce:	9c 87       	std	Y+12, r25	; 0x0c
     15d0:	ad 87       	std	Y+13, r26	; 0x0d
